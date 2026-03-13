@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us</title>
+  <meta name="description" content="Contact xyz support, sales, or billing. We’re here to help." />
+  <style>
+    :root{
+      --bg:#0b1220; --card:#0f1a2e; --text:#e8eefc; --muted:#a9b7d6;
+      --border:rgba(255,255,255,.12); --accent:#6aa6ff; --danger:#ff6a6a;
+      --shadow: 0 20px 50px rgba(0,0,0,.45);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 700px at 15% 10%, rgba(106,166,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 85% 20%, rgba(127,255,212,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px; margin:0 auto; padding:32px 16px 64px}
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:8px 0 22px}
+    .brand{display:flex; align-items:center; gap:10px}
+    .logo{
+      width:42px; height:42px; border-radius:12px; background:linear-gradient(135deg, rgba(106,166,255,.9), rgba(106,166,255,.2));
+      border:1px solid var(--border); box-shadow: var(--shadow);
+    }
+    .brand h1{font-size:18px; margin:0}
+    .brand p{margin:2px 0 0; color:var(--muted); font-size:13px}
+    nav{display:flex; gap:14px; flex-wrap:wrap}
+    nav a{font-size:14px; color:var(--muted)}
+    nav a:hover{color:var(--text)}
+    .hero{margin:16px 0 18px}
+    .hero h2{font-size:34px; margin:0 0 8px}
+    .hero p{margin:0; color:var(--muted); max-width:70ch; line-height:1.6}
+    .grid{
+      display:grid;
+      grid-template-columns: 1.4fr .9fr;
+      gap:16px;
+      margin-top:18px;
+    }
+    @media (max-width: 900px){
+      .grid{grid-template-columns:1fr}
+    }
+    .card{
+      background:rgba(15,26,46,.82);
+      border:1px solid var(--border);
+      border-radius:18px;
+      box-shadow: var(--shadow);
+      padding:18px;
+      backdrop-filter: blur(8px);
+    }
+    .card h3{margin:0 0 10px; font-size:18px}
+    .card p{margin:0 0 12px; color:var(--muted); line-height:1.6}
+    .row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    @media (max-width: 520px){ .row{grid-template-columns:1fr} }
+    label{display:block; font-size:13px; color:var(--muted); margin:10px 0 6px}
+    input, textarea, select{
+      width:100%;
+      padding:12px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(9,14,26,.7);
+      color: var(--text);
+      outline:none;
+    }
+    input:focus, textarea:focus, select:focus{border-color: rgba(106,166,255,.65); box-shadow: 0 0 0 4px rgba(106,166,255,.15)}
+    textarea{min-height:140px; resize:vertical}
+    .help{font-size:12px; color:var(--muted); margin-top:6px}
+    .actions{display:flex; gap:10px; align-items:center; margin-top:14px; flex-wrap:wrap}
+    button{
+      border:0;
+      border-radius:12px;
+      padding:12px 14px;
+      font-weight:600;
+      cursor:pointer;
+    }
+    .btn-primary{
+      background: linear-gradient(135deg, rgba(106,166,255,.95), rgba(106,166,255,.55));
+      color:#071225;
+    }
+    .btn-secondary{
+      background: transparent;
+      border:1px solid rgba(255,255,255,.18);
+      color: var(--text);
+    }
+    .note{
+      font-size:12px; color:var(--muted);
+      border-top:1px dashed rgba(255,255,255,.12);
+      padding-top:12px; margin-top:12px;
+    }
+    .list{display:grid; gap:10px; margin-top:10px}
+    .pill{
+      display:flex; gap:10px; align-items:flex-start;
+      padding:12px; border-radius:14px; border:1px solid rgba(255,255,255,.12);
+      background: rgba(9,14,26,.55);
+    }
+    .pill strong{display:block; font-size:13px}
+    .pill span{display:block; font-size:13px; color:var(--muted); margin-top:2px}
+    .dot{
+      width:10px; height:10px; border-radius:50%;
+      background: rgba(106,166,255,.9);
+      margin-top:5px;
+      box-shadow: 0 0 0 4px rgba(106,166,255,.15);
+      flex:0 0 auto;
+    }
+    footer{margin-top:18px; color:var(--muted); font-size:13px}
+    .small{font-size:12px; color:var(--muted)}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>axemahub.com/</h1>
+          <p>Support & contact</p>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <a href="/" rel="nofollow">Home</a>
+        <a href="/faq" rel="nofollow">FAQ</a>
+        <a href="/privacy-policy" rel="nofollow">Privacy</a>
+        <a href="/terms" rel="nofollow">Terms</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Contact Us</h2>
+      <p>
+        Need help with a payment, receipt, or an account question? Send us a message and our team will respond as soon as possible.
+        Please avoid sharing full card details or sensitive medical information in the form.
+      </p>
+    </section>
+
+    <main class="grid">
+      <!-- Contact form -->
+      <section class="card" aria-label="Contact form">
+        <h3>Send a message</h3>
+        <p>Fill out the form below. Fields marked with <span aria-hidden="true">*</span> are required.</p>
+
+        <!-- Replace action="#" with your backend endpoint (e.g., /api/contact) -->
+        <form id="contactForm" action="#" method="post" novalidate>
+          <div class="row">
+            <div>
+              <label for="fullName">Full name *</label>
+              <input id="fullName" name="fullName" type="text" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div>
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="phone" type="tel" placeholder="+1 (___) ___-____" autocomplete="tel" />
+            </div>
+            <div>
+              <label for="topic">Topic *</label>
+              <select id="topic" name="topic" required>
+                <option value="" selected disabled>Select a topic</option>
+                <option>Payment help</option>
+                <option>Refund / dispute</option>
+                <option>Receipt / confirmation</option>
+                <option>Technical issue</option>
+                <option>Business / partnerships</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="reference">Reference ID / Invoice # (optional)</label>
+          <input id="reference" name="reference" type="text" placeholder="e.g., ATH-123456" />
+
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" placeholder="Tell us what happened and how we can help..." required></textarea>
+          <div class="help">
+            Do not include full credit/debit card numbers, CVV, bank login details, or sensitive medical info.
+          </div>
+
+          <div class="actions">
+            <button class="btn-primary" type="submit">Submit</button>
+            <button class="btn-secondary" type="reset">Clear</button>
+            <span class="small" id="formStatus" role="status" aria-live="polite"></span>
+          </div>
+
+          <div class="note">
+            By submitting, you confirm the information is accurate and you agree to our <a href="/privacy-policy">Privacy Policy</a>.
+          </div>
+        </form>
+      </section>
+
+      <!-- Contact info / quick help -->
+      <aside class="card" aria-label="Contact details">
+        <h3>Other ways to reach us</h3>
+        <p>If you prefer, you can contact us using the options below.</p>
+
+        <div class="list">
+          <div class="pill">
+            <div class="dot" aria-hidden="true"></div>
+            <div>
+              <strong>Email</strong>
+              <span><a href="mailto:support@axemahub.com/">support@axemahub.com/</a></span>
+            </div>
+          </div>
+
+          <div class="pill">
+            <div class="dot" aria-hidden="true"></div>
+            <div>
+              <strong>Phone</strong>
+              <span><a href="tel:+10000000000">+1 (123) 123-1234</a> </span>
+            </div>
+          </div>
+
+          <div class="pill">
+            <div class="dot" aria-hidden="true"></div>
+            <div>
+              <strong>Support hours</strong>
+              <span>Mon–Fri, 9:00 AM – 6:00 PM (ET)</span>
+            </div>
+          </div>
+
+          <div class="pill">
+            <div class="dot" aria-hidden="true"></div>
+            <div>
+              <strong>Mailing address</strong>
+              <span>
+                axemahub.com/<br />
+                123 Business Street<br />
+                City, State ZIP<br />
+                USA
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="note">
+          For disputes/chargebacks, include your reference ID and the email used at checkout.
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> axemahub.com/. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Small UX helpers (no backend needed)
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const form = document.getElementById("contactForm");
+    const statusEl = document.getElementById("formStatus");
+
+    form.addEventListener("submit", function (e) {
+      // If you connect a backend, remove this preventDefault.
+      e.preventDefault();
+
+      // Basic validation
+      const required = ["fullName", "email", "topic", "message"];
+      for (const id of required) {
+        const el = document.getElementById(id);
+        if (!el.value || !el.value.trim()) {
+          statusEl.textContent = "Please fill out all required fields.";
+          el.focus();
+          return;
+        }
+      }
+
+      statusEl.textContent = "Thanks! Your message is ready to be sent. (Connect a backend endpoint to submit.)";
+      // Example: if you implement backend, you can use fetch() here to POST the form data.
+    });
+  </script>
+</body>
+</html>
